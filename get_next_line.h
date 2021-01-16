@@ -6,7 +6,7 @@
 /*   By: tnave <tnave@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/15 16:27:15 by tnave             #+#    #+#             */
-/*   Updated: 2021/01/15 17:32:17 by tnave            ###   ########.fr       */
+/*   Updated: 2021/01/16 16:09:36 by tnave            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,18 @@
 # include <unistd.h>
 # include <limits.h>
 
+typedef struct		v_list
+{
+	int		i;
+	int		fd;
+
+}					vv_list;
+
+typedef struct 		gnl_list
+{
 
 
-
+}	getnextl_list;
 
 
 // struct pr les erreurs ?
