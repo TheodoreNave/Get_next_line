@@ -6,7 +6,7 @@
 /*   By: tnave <tnave@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/15 15:07:09 by tnave             #+#    #+#             */
-/*   Updated: 2021/01/16 18:03:05 by tnave            ###   ########.fr       */
+/*   Updated: 2021/01/18 16:04:42 by tnave            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,54 +15,56 @@
 
 int		get_next_line(int fd, char **line)
 {
-	int i;
-	int j;
+	static char buff[MAXOPEN][BUFFER_SIZE];
 	char *str;
+	int rd;
+	int i;
 
-	ft_strjoin();
-
-
-
-	return (0);
+	i = 0;
+	if (fd < 0 || line == NULL || BUFFER_SIZE < 1 || BUFFER_SIZE > SSIZE_MAX || 
+			fd == "*.bin" || )
+		return (-1);
+	if (!(str = malloc(sizeof(char) * BUFFER_SIZE + 1)))
+		return (-1);
+	if (!(buff[fd][0] == 0 || buff[fd] == ""))
+	{
+		while (ft_strchr(buff[fd], '\n'))
+		{
+			line[i] += str[i];
+			buffer -= str[i];
+			i++;
+			return (1);
+		}
+		line[i] += buff;
+		buff = NULL;
+		i = 0;
+		while (rd = read(fd, buff, BUFFER_SIZE) && rd > 0)
+		{
+			str = ft_strjoin(str, buff);
+			if (rd == 0)
+			{
+				line[i] += buff;
+				return (0);
+			}
+		}
+	}
+	return (-1);
 }
 
-int		check_buffer_max_error()
+//NEED TO FREE
+// Dup La string si elle existe
+// join les strings entre elle
+
+int		check_error(int fd)
 {
-	if (fd = "*.bin")
-		return (-1);
-	if (fd = read) // TO MODIFY
-		return ();
-	if (BUFFER_SIZE > SSIZE_MAX)
-		return (-1);
-	if (!= EOF)
-		return (-1);
-	
+	if (fd < 0 || BUFFER_SIZE < 1 || BUFFER_SIZE > SSIZE_MAX || fd == "*.bin")
+	{
+		
+	}
 }
-
-char	full_line(char *s1, )
-{
-
-}	
-
-char buf[BUFF + 1];
-buf[BUFF] = '\0';
 
 int main()
 {
-
-	int fd;
-	int rd;
-
-	fd = open("text.txt", O_RDONLY);
-	rd = (int)read(fd, buf, BUFF);
-	printf("read = %zd\n", rd);
-	printf("buf = %s\n", buf);
-	printf("read = %zd\n", read(fd, buf, BUFF));
-	printf("buf = %s\n", buf);
-	printf("read = %zd\n", read(fd, buf, BUFF));
-	printf("buf = %s\n", buf);
-	printf("read = %zd\n", read(fd, buf, BUFF));
-	printf("buf = %s\n", buf);
-
+	
 	return (0);
 }

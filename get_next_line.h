@@ -6,13 +6,13 @@
 /*   By: tnave <tnave@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/15 16:27:15 by tnave             #+#    #+#             */
-/*   Updated: 2021/01/16 16:09:36 by tnave            ###   ########.fr       */
+/*   Updated: 2021/01/18 15:54:09 by tnave            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
-# define BUFFER_SIZE=42
+# define BUFFER_SIZE 42
 
 # include <sys/types.h>
 # include <sys/stat.h>
@@ -20,20 +20,12 @@
 # include <unistd.h>
 # include <limits.h>
 
-typedef struct		v_list
-{
-	int		i;
-	int		fd;
+# include <libc.h>
 
-}					vv_list;
-
-typedef struct 		gnl_list
-{
-
-
-}	getnextl_list;
-
-
-// struct pr les erreurs ?
-
+int		get_next_line(int fd, char **line);
+int		check_buffer_max_error();
+char	*ft_strdup(const char *s1);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	ft_strcpy();
 #endif

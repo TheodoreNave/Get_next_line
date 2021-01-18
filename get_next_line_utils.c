@@ -6,7 +6,7 @@
 /*   By: tnave <tnave@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/15 16:31:38 by tnave             #+#    #+#             */
-/*   Updated: 2021/01/15 17:35:58 by tnave            ###   ########.fr       */
+/*   Updated: 2021/01/18 14:56:46 by tnave            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,4 +94,17 @@ char		*ft_substr(char const *s, unsigned int start, size_t len)
 }
 // Secure le substr
 
+char	*ft_strcpy(char const *dst, char const *src)
+{
+	int i;
+
+	i = 0;
+	while (src[i])
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	src[i] = '\0';
+	return (dst);
+}
 
