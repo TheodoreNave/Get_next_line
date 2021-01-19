@@ -6,13 +6,13 @@
 /*   By: tnave <tnave@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/15 16:27:15 by tnave             #+#    #+#             */
-/*   Updated: 2021/01/18 15:54:09 by tnave            ###   ########.fr       */
+/*   Updated: 2021/01/19 11:10:18 by tnave            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
-# define BUFFER_SIZE 42
+# define BUFFER_SIZE
 
 # include <sys/types.h>
 # include <sys/stat.h>

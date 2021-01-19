@@ -6,7 +6,7 @@
 /*   By: tnave <tnave@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/15 16:31:38 by tnave             #+#    #+#             */
-/*   Updated: 2021/01/18 14:56:46 by tnave            ###   ########.fr       */
+/*   Updated: 2021/01/19 10:59:20 by tnave            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,17 @@
  *
 */
 
+size_t		ft_strlen(const char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
+}
+
+
 
 char		*ft_strdup(const char *s1)
 {
@@ -44,6 +55,23 @@ char		*ft_strdup(const char *s1)
 	dest[i] = '\0';
 	return (dest);
 }
+
+char	*ft_strchr(char *s, int c)
+{
+	unsigned int i;
+
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
+		i++;
+	}
+	if (s[i] == (char)c)
+		return ((char *)&s[i]);
+	return (NULL);
+}
+
 
 char				*ft_strjoin(char const *s1, char const *s2)
 {
@@ -94,7 +122,7 @@ char		*ft_substr(char const *s, unsigned int start, size_t len)
 }
 // Secure le substr
 
-char	*ft_strcpy(char const *dst, char const *src)
+char	*ft_strcpy(char *dst, char *src)
 {
 	int i;
 
