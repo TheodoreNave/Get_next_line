@@ -6,7 +6,7 @@
 /*   By: tnave <tnave@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/15 15:07:09 by tnave             #+#    #+#             */
-/*   Updated: 2021/01/19 11:05:04 by tnave            ###   ########.fr       */
+/*   Updated: 2021/01/20 10:04:41 by tnave            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <limits.h>
 #define MAX_OPEN 23
 #define BUFFER_SIZE 32
-
+/*
 int		get_next_line(int fd, char **line)
 {
 	static char buff[MAX_OPEN][BUFFER_SIZE];
@@ -54,7 +54,7 @@ int		get_next_line(int fd, char **line)
 // Dup La string si elle existe
 // join les strings entre elle
 // Si .bin dans fd -> -1
-/*
+
 int		check_error(int fd)
 {
 	if (fd < 0 || BUFFER_SIZE < 1 || BUFFER_SIZE > SSIZE_MAX || fd == "*.bin")
@@ -63,6 +63,16 @@ int		check_error(int fd)
 	}
 }
 */
+
+int		get_next_line(int fd, char **line)
+{
+
+
+
+
+
+}
+
 int main(void)
 {
 	
