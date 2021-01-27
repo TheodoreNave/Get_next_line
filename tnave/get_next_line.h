@@ -6,7 +6,7 @@
 /*   By: tnave <tnave@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/26 16:01:54 by tnave             #+#    #+#             */
-/*   Updated: 2021/01/26 16:08:21 by tnave            ###   ########.fr       */
+/*   Updated: 2021/01/27 11:02:21 by tnave            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,8 @@ int		ft_get_n(char *temp);
 char	*get_first_line(int fd, char **line, char *buff, char *temp);
 char 	*get_temp_line(char **line, char *temp);
 int		get_next_line(int fd, char **line);
+char				*ft_strjoin_free(char *s1, char *s2);
+char	*ft_strncpy(char *dest, char *src, unsigned int n);
+char		*ft_strdup(const char *s1);
 
 #endif
