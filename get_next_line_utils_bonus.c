@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tnave <tnave@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/26 16:01:38 by tnave             #+#    #+#             */
-/*   Updated: 2021/01/29 16:04:41 by tnave            ###   ########.fr       */
+/*   Created: 2021/01/29 15:49:47 by tnave             #+#    #+#             */
+/*   Updated: 2021/01/29 16:07:21 by tnave            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 size_t			ft_strlen(char const *str)
 {
